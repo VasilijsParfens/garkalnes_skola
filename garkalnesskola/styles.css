@@ -4,6 +4,13 @@ body {
     font-family: "Sen", sans-serif; 
 }
 
+html {
+    transform: scale(0.8);
+    transform-origin: top left;
+    width: 125%; /* Adjust as needed */
+    height: 125%; /* Adjust as needed */
+  }
+
 hr{
     margin-top: 0;
     background-color: #35483A;
@@ -275,35 +282,26 @@ hr{
     transition: ease-in 0.1s;
 }
 
-/* Table styling */
 table {
-    width: 100%;
     border-collapse: collapse;
-    border-spacing: 0;
-    margin-top: 20px; /* Adjust margin as needed */
-  }
-  
-  th,
-  td {
-    padding: 10px;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
     text-align: left;
-    border-bottom: 1px solid #617E69; /* Border color */
-  }
-  
-  th {
-    background-color: #f2f2f2; /* Header background color */
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f2f2f2; /* Even row background color */
-  }
-  
-  /* CSS for table header font */
-  th {
-    font-weight: bold;
-  }
-  
-  /* CSS for table cell font */
-  td {
-    font-size: 14px;
-  }
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #b90003;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
