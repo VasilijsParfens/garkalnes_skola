@@ -305,3 +305,41 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #ddd;
 }
+
+/* Infografikas */
+.infografikas-container {
+    display: flex;
+    justify-content: space-between; /* Adjust this property to change the gap between columns */
+    flex-wrap: wrap;
+}
+.infografikas-container-column {
+    width: 48%; /* Adjust the width as needed */
+    margin-bottom: 20px; /* Adjust the space between rows */
+}
+.infografikas-container-column img {
+    width: 400px;
+    height: auto;
+}
+
+/* Button grid */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .button-grid button {
+    width: 100%;
+    padding: 80px;
+    font-size: 42px;
+    font-family: "Sen", sans-serif;
+    background-color: #82ab8e;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .button-grid button:hover {
+    background-color: #75997f;
+    transition: ease-in 0.1s;
+  }
+  
