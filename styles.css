@@ -355,6 +355,7 @@ tr:hover {
 
   /*Album grid*/
 
+
   .album-grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
@@ -368,7 +369,46 @@ tr:hover {
 }
   
   .album-grid-item {
+    position: relative;
     padding: 10px;
     border: 1px solid #ccc;
     overflow: hidden;
+}
+
+.album-grid-item .album-title {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.787); /* Semi-transparent white background */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.album-items-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Creates five columns of equal width */
+    gap: 10px; /* Adjust gap between columns as needed */
+}
+
+.album-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 200px;
+    transition: transform .5s;
+}
+
+.album-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+.album-item:hover{
+    -ms-transform: scale(2.1, 2.1);
+    -webkit-transform: scale(2.1, 2.1);
+    transform: scale(2.1, 2.1);
 }
